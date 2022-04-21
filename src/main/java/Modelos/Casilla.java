@@ -1,6 +1,6 @@
 package Modelos;
 
-public class Casilla {
+public abstract class  Casilla {
 
     private int posicion_x;
     private int posicion_y;
@@ -15,6 +15,8 @@ public class Casilla {
     public  Casilla(){
 
     }
+
+    public abstract Casilla clone();
 
     public int getPosicion_x() {
         return posicion_x;

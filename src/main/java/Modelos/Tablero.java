@@ -1,21 +1,26 @@
 package Modelos;
 
+import Controladores.Constructores.CasillaTablero;
+
 public class tablero {
-    private int tamanio;
+    private static tablero TableroJuego = null;
+    private static CasillaTablero[][] MTablero = null;
 
-    public  tablero(int pTamanio){
-    setTamanio(pTamanio);
+    private tablero(){
+
     }
 
-    public  tablero(){
-        setTamanio(0);
+    public static tablero getInstance(int pFilas, int pColumnas) {
+        if (tablero.TableroJuego == null) {
+            tablero.TableroJuego = new tablero();
+            MTablero = new CasillaTablero[pFilas][pColumnas];
+
+        }
+        return tablero.TableroJuego;
     }
 
-    public int getTamanio() {
-        return tamanio;
-    }
 
-    public void setTamanio(int tamanio) {
-        this.tamanio = tamanio;
+    public static CasillaTablero[][] getMTablero() {
+        return MTablero;
     }
 }
