@@ -14,13 +14,12 @@ public class tablero {
         if (tablero.TableroJuego == null) {
             tablero.TableroJuego = new tablero();
             MTablero = new CasillaTablero[pFilas][pColumnas];
-
         }
         return tablero.TableroJuego;
     }
 
 
-    public static CasillaTablero[][] getMTablero() {
+    public  CasillaTablero[][] getMTablero() {
         return MTablero;
     }
 }
