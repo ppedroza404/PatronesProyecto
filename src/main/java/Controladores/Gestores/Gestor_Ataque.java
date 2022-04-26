@@ -58,10 +58,10 @@ public class Gestor_Ataque {
         }
     }
 
-    public void QuitarDecorarCategoria (int pIdCategoria) {
+public void QuitarDecorarCategoria (int pIdCategoria) {
         AtaqueEspecial pDecorada = (AtaqueEspecial) this.getCategoria(pIdCategoria);
-        Categoria cat = pDecorada.getAtaque();
-        replaceCategoria_Array(pIdCategoria,cat);
+        Categoria cat = pDecorada.getCategoria();
+        replaceCategoria_Array(pIdCategoria, cat);
     }
 
     public String printCategoria(int pId) {
