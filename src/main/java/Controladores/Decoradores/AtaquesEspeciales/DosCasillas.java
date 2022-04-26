@@ -15,7 +15,8 @@ public class DosCasillas extends AtaqueEspecial {
     }
 
     public void Ataque() {
-//tablero
+        int dosMov_x = casillaTablero.getPosicion_x() + 2;
+        int dosMov_y = casillaTablero.getPosicion_y() + 2;
     }
 
     public void Defensa() {
