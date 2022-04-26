@@ -16,10 +16,11 @@ public class AtaqueBomba extends AtaqueEspecial {
     }
 
    
-    public void Ataque() {
-        int sacrificar = tanque.getVida() - 1;
-int duplicarX = casillaTablero.getPosicion_x() *2;
-int duplicarY = casillaTablero.getPosicion_y() *2;
+  public void Ataque() {
+        int ataqueBomba = tanque.getVida() - 2;
+        int tanqueia = tanque.getVida() - 2;
+        int artilleroia = artillero.getVida() - 4;
+        int infanteriaIA = infanteria.getVida() - 5;
     }
 
     public void Defensa() {
