@@ -15,8 +15,11 @@ public class AtaqueBomba extends AtaqueEspecial {
         return cCategoria.getNombre() + "Ataque Bomba";
     }
 
+   
     public void Ataque() {
-categoria.getAtaque();
+        int sacrificar = tanque.getVida() - 1;
+int duplicarX = casillaTablero.getPosicion_x() *2;
+int duplicarY = casillaTablero.getPosicion_y() *2;
     }
 
     public void Defensa() {
