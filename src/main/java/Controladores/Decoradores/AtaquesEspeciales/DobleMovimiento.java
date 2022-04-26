@@ -14,8 +14,10 @@ public class DobleMovimiento extends AtaqueEspecial {
         return cCategoria.getNombre() + "Doble movimiento";
     }
 
-    public void Ataque() {
-//tablero
+  public void Ataque() {
+        int sacrificar = tanque.getVida() - 1;
+int duplicarX = casillaTablero.getPosicion_x() *2;
+int duplicarY = casillaTablero.getPosicion_y() *2;
     }
 
     public void Defensa() {
